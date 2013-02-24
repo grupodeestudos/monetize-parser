@@ -19,7 +19,7 @@ public class ItauParserTest {
 		assertEquals("16,63", r.getValor());
 		assertEquals("23/02/2013", r.getData());
 		assertEquals("14h30", r.getHora());
-		assertEquals("SUPERMERCADOS GUA ", r.getEstabelecimento());
+		assertEquals("SUPERMERCADOS GUA", r.getEstabelecimento());
 	}
 
 }

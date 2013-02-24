@@ -73,7 +73,7 @@ public class ParsedSMS {
 
 		try{
 			Method setter = ParsedSMS.class.getDeclaredMethod("set" + campo, String.class);
-			setter.invoke(this, valor);
+			setter.invoke(this, valor.trim());
 			
 		}catch (NoSuchMethodException nsm) {
 			

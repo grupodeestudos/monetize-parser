@@ -73,7 +73,7 @@ public class ItauParser extends BaseParser<Object>{
 	}
 	
 	Rule Estabelecimento(){
-		Rule palavra = Sequence(OneOrMore(CharRange('A', 'Z')), " ");
+		Rule palavra = Sequence(OneOrMore(CharRange('A', 'Z')), Optional(" "));
 		return OneOrMore(palavra);
 	}
 	
